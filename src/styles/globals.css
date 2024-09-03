@@ -1,0 +1,15 @@
+.active {
+  background-color: #fecece;
+  border-radius: 8px;
+}
+
+body,
+html {
+  overflow-x: hidden !important;
+}
+
+.css-dqr9h-MuiRating-label {
+  font-size: 25px;
+  display: block;
+  margin-right: 1px;
+}/*# sourceMappingURL=globals.css.map */

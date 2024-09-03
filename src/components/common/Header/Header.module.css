@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+.Header {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.Header .LogoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.Header .LogoHeader .Logo {
+  font-size: 30px;
+  font-family: "Amatic SC";
+}
+.Header .LogoHeader .Logo span {
+  display: inline-block;
+}
+.Header .LogoHeader .form {
+  display: flex;
+  align-items: center;
+  width: 47%;
+}
+.Header .LogoHeader .form .formInput {
+  border-radius: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-color: white;
+}
+.Header .LogoHeader .form .searchBtn {
+  height: 55px;
+  background-color: #8dc8c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 130px;
+  border-top-right-radius: 8px;
+  color: white;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.Header .NavbarContainer {
+  background-color: white;
+  padding: 8px 0;
+}
+.Header .NavbarContainer .Brand {
+  display: none;
+}
+.Header .NavbarContainer .active {
+  background-color: red;
+}
+.Header .NavbarContainer .Link,
+.Header .NavbarContainer .LinkNoMargin {
+  font-size: 18px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+.Header .NavbarContainer .Link {
+  margin-right: 45px;
+}
+.Header .NavbarContainer .LinkNoMargin {
+  margin-left: 30px;
+}
+.Header .LogoHeader,
+.Header .NavbarStyles {
+  max-width: 73%;
+  margin: auto auto;
+}
+@media (max-width: 1200px) {
+  .Header .NavbarContainer .Link {
+    margin-right: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .Header .LogoHeader,
+  .Header .NavbarStyles {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .Header .LogoHeader .form,
+  .Header .NavbarStyles .form {
+    display: none;
+  }
+  .Header .NavbarContainer .Brand {
+    display: block;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

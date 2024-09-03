@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); //logo font
+$logo-font: "Amatic SC";
+$blue-color: #24ade3;
+$orange-color: #f79418;
+$main-font: "Montserrat";
+.Header {
+  font-family: $main-font;
+  font-weight: 500;
+  .LogoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    .Logo {
+      font-size: 30px;
+      font-family: $logo-font;
+      span {
+        display: inline-block;
+      }
+    }
+    .form {
+      display: flex;
+      align-items: center;
+      width: 47%;
+      .formInput {
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-color: white;
+      }
+      .searchBtn {
+        height: 55px;
+        background-color: #8dc8c4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 130px;
+        border-top-right-radius: 8px;
+        color: white;
+        border-bottom-right-radius: 8px;
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+  }
+  .NavbarContainer {
+    background-color: white;
+    padding: 8px 0;
+
+    .Brand {
+      display: none;
+    }
+    .active {
+      background-color: red;
+    }
+    .Link,
+    .LinkNoMargin {
+      font-size: 18px;
+      display: inline-block;
+      color: black;
+      text-decoration: none;
+    }
+    .Link {
+      margin-right: 45px;
+    }
+    .LinkNoMargin {
+      margin-left: 30px;
+    }
+  }
+  .LogoHeader,
+  .NavbarStyles {
+    max-width: 73%;
+    margin: auto auto;
+  }
+
+  @media (max-width: 1200px) {
+    .NavbarContainer {
+      .Link {
+        margin-right: 32px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .LogoHeader,
+    .NavbarStyles {
+      max-width: 100%;
+      padding: 10px;
+      .form {
+        display: none;
+      }
+    }
+    .NavbarContainer {
+      .Brand {
+        display: block;
+      }
+    }
+  }
+}
